@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Programs</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Programs</h1>
+
+[ <a href="programs.html">Programs</a> | <a href="disciplines.html">Disciplines</a> | <a href="analyses.html">Analyses</a> | <a href="engineers.html">Engineers</a> | <a href="requirements.html">Requirements</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Programs</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Program ID</th>
+    <th>Program Name</th>
+    <th>Program VP</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td >Plane A</td>
+    <td >VP 1</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >2</td>
+    <td >Plane B</td>
+    <td >VP 2</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td >Plane C</td>
+    <td >VP 3</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addProgram">
+        <legend><strong>Add Programs</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+            <label> VP </label> <input type="text" name="vp">
+          </fieldset>
+          <input class="btn" type="submit" id="addProgram" value="Add a Program">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new Program-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateProgram">
+      <legend><strong>Update Program</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="Plane A" name="name">
+            <label> VP </label> <input type="text" value="VP 1" name="VP">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveProgram" value="Save Update Program">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteProgram">
+      <legend><strong>Delete Program</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> Plane A
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteProgram" value="Delete Programe">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>

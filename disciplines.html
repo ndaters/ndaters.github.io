@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Disciplines</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Disciplines</h1>
+
+[ <a href="programs.html">Programs</a> | <a href="disciplines.html">Disciplines</a> | <a href="analyses.html">Analyses</a> | <a href="engineers.html">Engineers</a> | <a href="requirements.html">Requirements</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Disciplines</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Discipline ID</th>
+    <th>Discipline Name</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td >Structures</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >2</td>
+    <td>Aerodynamics</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td>Propulsion</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td>Manufacturing</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addDiscipline">
+        <legend><strong>Add Discipline</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+          </fieldset>
+          <input class="btn" type="submit" id="addDiscipline" value="Add a Discipline">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new Discipline-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateDiscipline">
+      <legend><strong>Update Discipline</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="Structures" name="name">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveDiscipline" value="Save Update Discipline">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteDiscipline">
+      <legend><strong>Delete Discipline</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> Structures
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteDiscipline" value="Delete Discipline">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>

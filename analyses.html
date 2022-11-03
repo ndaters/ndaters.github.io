@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Analyses</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Analyses</h1>
+
+[ <a href="programs.html">Programs</a> | <a href="disciplines.html">Disciplines</a> | <a href="analyses.html">Analyses</a> | <a href="engineers.html">Engineers</a> | <a href="requirements.html">Requirements</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Analyses</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Analysis ID</th>
+    <th>Analysis Name</th>
+    <th>Analysis Notes</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td >Structural Analysis</td>
+    <td >SOL 101</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >2</td>
+    <td>Aero Performance</td>
+    <td >CFD</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >4</td>
+    <td>Noise Evaluation</td>
+    <td >Via Flight Test</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td>Flutter</td>
+    <td >Aeroelastic Model</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addAnalysis">
+        <legend><strong>Add Analysis</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+          </fieldset>
+          <input class="btn" type="submit" id="addAnalysis" value="Add a Analysis">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new Analysis-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateAnalysis">
+      <legend><strong>Update Analysis</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="Structural Analysis" name="name">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveAnalysis" value="Save Update Analysis">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteAnalysis">
+      <legend><strong>Delete Analysis</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+          <label> Name </label> Structural Analysis
+          <label> Analysis Notes </label> SOL 101
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteAnalysis" value="Delete Analysis">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>

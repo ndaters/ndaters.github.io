@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Engineers</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Engineers</h1>
+
+[ <a href="programs.html">Programs</a> | <a href="disciplines.html">Disciplines</a> | <a href="analyses.html">Analyses</a> | <a href="engineers.html">Engineers</a> | <a href="requirements.html">Requirements</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Engineers</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Engineer ID</th>
+    <th>Engineer Name</th>
+    <th>Engineer Discipline</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td >Alex</td>
+    <td >1</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >2</td>
+    <td>Nick</td>
+    <td >1</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td>Mike</td>
+    <td >3</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >4</td>
+    <td>Mad Dog</td>
+    <td >2</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addEngineer">
+        <legend><strong>Add Engineer</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+          </fieldset>
+          <input class="btn" type="submit" id="addEngineer" value="Add a Engineer">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new Engineer-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateEngineer">
+      <legend><strong>Update Engineer</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="Alex" name="name">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveEngineer" value="Save Update Engineer">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteEngineer">
+      <legend><strong>Delete Engineer</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+          <label> Name </label> Alex
+          <label> Discipline </label> 1
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteEngineer" value="Delete Engineer">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>

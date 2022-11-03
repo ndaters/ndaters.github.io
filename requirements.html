@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Requirements</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Requirements</h1>
+
+[ <a href="programs.html">Programs</a> | <a href="disciplines.html">Disciplines</a> | <a href="analyses.html">Analyses</a> | <a href="engineers.html">Engineers</a> | <a href="requirements.html">Requirements</a> ]
+<div id="browse" style="display: block">
+<p><strong>Browse Requirements</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>Requirement ID</th>
+    <th>Requirement Name</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >1</td>
+    <td >SFAA 14 CFR Part 23</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >2</td>
+    <td>EASA 748/2012</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >3</td>
+    <td>JCAB 1</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> <!-- browse -->
+<div id="insert" style="display: block">
+    <form id="addRequirement">
+        <legend><strong>Add Requirement</strong></legend>
+          <fieldset class="fields">
+            <label> Name </label> <input type="text" name="name">
+          </fieldset>
+          <input class="btn" type="submit" id="addRequirement" value="Add a Requirement">
+          <input class="btn" type="button" value="cancel">
+	</form> <!--add new Requirement-->
+</div><!-- insert -->
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateRequirement">
+      <legend><strong>Update Requirement</strong></legend>
+          <fieldset class="fields">
+          <label>ID:</label> 1
+            <label> Name </label> <input type="text" value="FAA 14 CFR Part 23" name="name">
+    </fieldset>
+    <input class="btn" type="submit" id="UpdateSaveRequirement" value="Save Update Requirement">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- update -->
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteRequirement">
+      <legend><strong>Delete Requirement</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>ID:</label> 1
+            <label> Name </label> FAA 14 CFR Part 23
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteRequirement" value="Delete Requiremente">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div><!-- delete -->
+</body>
+</html>
