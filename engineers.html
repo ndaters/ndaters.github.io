@@ -53,7 +53,16 @@
     <form id="addEngineer">
         <legend><strong>Add Engineer</strong></legend>
           <fieldset class="fields">
-            <label> Name </label> <input type="text" name="name">
+            <label> Name </label> <input type="text" name="name"><br>
+
+            <label for="disciplines">Discipline</label>
+            <select name="disciplines" id="disciplines">
+              <option value="fk1">Structures</option>
+              <option value="fk2">Aerodynamics</option>
+              <option value="fk3">Propulsion</option>
+              <option value="fk4">Manufacturing</option>
+            </select><br>
+
           </fieldset>
           <input class="btn" type="submit" id="addEngineer" value="Add a Engineer">
           <input class="btn" type="button" value="cancel">
@@ -66,7 +75,16 @@
       <legend><strong>Update Engineer</strong></legend>
           <fieldset class="fields">
           <label>ID:</label> 1
-            <label> Name </label> <input type="text" value="Alex" name="name">
+            <label> Name </label> <input type="text" value="Alex" name="name"><br>
+
+            <label for="disciplines">Discipline</label>
+            <select name="disciplines" id="disciplines">
+              <option value="fk1">Structures</option>
+              <option value="fk2">Aerodynamics</option>
+              <option value="fk3">Propulsion</option>
+              <option value="fk4">Manufacturing</option>
+            </select><br>
+            
     </fieldset>
     <input class="btn" type="submit" id="UpdateSaveEngineer" value="Save Update Engineer">
           <input class="btn" type="button" value="cancel" >
